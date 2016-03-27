@@ -105,7 +105,7 @@ void loop() {
   }
 
   if (readingUtility == LOW) {
-    Keyboard.write("p");
+    Keyboard.write('p');
     analogWrite(pinCoinLeft, 50);
     analogWrite(pinCoinRight, 50);
     delay(debounceDelay);
