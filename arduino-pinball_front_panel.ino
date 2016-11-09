@@ -1,3 +1,26 @@
+// BauTek Mini Pinball Front Panel Controller
+// (March 2016) Adam J. Bauman, https://bitbucket.org/adambauman/arduino-pinball_front_panel
+//
+// This code runs the microcontroller that handles all of the front panel button pushes and LEDs.
+// The front panel includes two LEDS for the coin slots, four main face buttons for volume control
+// and table selection as well a hidden button that can be used for utility functions in the future. The front panel also contains a LIS3DH 3-axis
+// accelerometer for tilt control (coming in the future once I figure out the acceleration math.)
+//
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//
+
 #include <Adafruit_Sensor.h> //https://github.com/adafruit/Adafruit_Sensor/archive/master.zip
 #include <Adafruit_LIS3DH.h> //https://github.com/adafruit/Adafruit_LIS3DH/archive/master.zip
 #include <HID-Project.h> //https://github.com/NicoHood/HID
